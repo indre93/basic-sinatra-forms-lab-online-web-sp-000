@@ -5,7 +5,7 @@ describe App do
       get '/newteam'
       expect(last_response.status).to eq(200)
     end
- 
+
     it 'renders basketball team form' do
       visit '/newteam'
       expect(page).to have_selector("form")
